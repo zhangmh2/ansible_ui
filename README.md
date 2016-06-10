@@ -54,12 +54,13 @@ Install
 
 * 安装依赖库
 
-
+        yum install libffi-devel openldap-devel mysql-devel**** 依赖包
         cd ansible-ui
         pip install -r requirements.txt
         pip install PIL --allow-external PIL --allow-unverified PIL
-    
-
+    ########如果初始化数据库失败,解决方案:
+        pip install django-guardian==1.3.0 如果初始化数据库失败，则使用pip install django-guardian==1.2.0
+        pip install ansible==1.9.6
 * 配置ldap、数据库和邮件信息
 
 
